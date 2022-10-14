@@ -25,7 +25,20 @@ Surname <input type="text" name="Surname"><br>
 Company <input type="text" name="Company"><br>
 <input type="submit">
 
+<?php
+$servername = "localhost";
+$username = "username";
+$password = "password";
 
+// Create Connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check Connection
+if ($conn->connect_error) {
+    die("connectionfailed:" . $conn->connect_error);
+}
+echo "ConnectSuccessfully"
+?>
 
 
 
