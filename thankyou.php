@@ -7,10 +7,15 @@
     
 <h1>
      
-    <?php
+
     
-        print "Thank You!";
+    Thank You 
+    <?php print $_POST["Name"]; ?>! 
+               
+    
+    
+
       
     
-    ?>  
+    
 </h1>
