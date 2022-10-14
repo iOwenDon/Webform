@@ -10,7 +10,8 @@
 
     
     Thank You 
-    <?php print $_POST["Name"]; ?>! 
+    <?php print $_POST["FirstName"]; ?> 
+    <?php print $_POST["Surname"]; ?>! 
                
     
     

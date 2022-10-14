@@ -20,7 +20,7 @@
 
 <p> Contact details </p>
 <form action="thankyou.php" method="post">
-Name <input type="text" name="Name"><br>
+First Name <input type="text" name="FirstName"><br>
 Surname <input type="text" name="Surname"><br>
 Company <input type="text" name="Company"><br>
 <input type="submit">
