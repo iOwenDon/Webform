@@ -25,14 +25,7 @@ Surname <input type="text" name="Surname"><br>
 Company <input type="text" name="Company"><br>
 <input type="submit">
 
-
-
 </form>
-
-
-
-
-
 
 
 
