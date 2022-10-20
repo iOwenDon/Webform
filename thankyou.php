@@ -11,12 +11,17 @@
     
     Thank You 
     <?php print $_POST["FirstName"]; ?> 
-    <?php print $_POST["Surname"]; ?>! 
-               
+    <?php print $_POST["Surname"]; ?>!<br>
+
+</h1>
+
+<h2>
+    <?php print "Company:" ?> 
+    <?php print $_POST["Company"]; ?> 
+</h2>              
     
     
 
       
     
     
-</h1>
