@@ -19,7 +19,7 @@
 
 
 <p> Contact details </p>
-<form action="thankyou.php" method="post">
+<form action="connect.php" method="post">
 First Name <input type="text" name="FirstName"><br>
 Surname <input type="text" name="Surname"><br>
 Company <input type="text" name="Company"><br>
