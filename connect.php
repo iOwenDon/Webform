@@ -22,10 +22,6 @@
     
 <?php
 
-$FirstName = $_POST["FirstName"];
-$Surname = $_POST["Surname"];
-$Company = $_POST["Company"];
-
 //Database connection
 $conn =new mysqli("localhost", "root" , NULL , "webform");
 if($conn->connect_error) {
@@ -33,7 +29,7 @@ if($conn->connect_error) {
 }else{
     $stmt = $conn->prepare("insert into name_company_form(FirstName,Surname,Company)
     Values(?, ?, ?) ");
-    $stmt->bind_param("sss", $FirstName , $Surname , $Company);
+    $stmt->bind_param("sss", $_POST["FirstName"] , $_POST["Surname"] , $_POST["Company"]);
     $stmt->execute();  
     print_r($stmt);
     $stmt->close();
