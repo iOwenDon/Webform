@@ -24,7 +24,7 @@
 //Database connection
 $conn =new mysqli("localhost", "root" , "" , "webform");
 if($conn->connect_error) {
-   die("connection failed  : ".$conn->connect_error);
+   die("connection failed: ". $conn->connect_error);
 }else{
     $stmt = $conn->prepare("insert into name_company_form(FirstName,Surname,Company)
     Values(?, ?, ?) ");
