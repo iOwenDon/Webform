@@ -21,8 +21,13 @@
 </h2>              
     
 <?php
+
+$FirstName = $_POST["FirstName"];
+$Surname = $_POST["Surname"];
+$Company = $_POST["Company"];
+
 //Database connection
-$conn =new mysqli("localhost", "root" , "" , "webform");
+$conn =new mysqli("localhost", "root" , NULL , "webform");
 if($conn->connect_error) {
    die("connection failed: ". $conn->connect_error);
 }else{
@@ -30,6 +35,7 @@ if($conn->connect_error) {
     Values(?, ?, ?) ");
     $stmt->bind_param("sss", $FirstName , $Surname , $Company);
     $stmt->execute();  
+    print_r($stmt);
     $stmt->close();
     $conn->close();
 }
