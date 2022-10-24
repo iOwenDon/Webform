@@ -28,7 +28,7 @@ if($conn->connect_error) {
 }else{
     $stmt = $conn->prepare("insert into name_company_form(FirstName,Surname,Company)
     Values(?, ?, ?) ");
-    $stmt->bind_param("sss", $FirstName, $Surname, $Company);
+    $stmt->bind_param("sss", $FirstName , $Surname , $Company);
     $stmt->execute();  
     $stmt->close();
     $conn->close();
